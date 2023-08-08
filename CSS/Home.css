@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+    font-weight: normal;
+    font-family: 'Markazi Text', serif;
+    background: #c69c72;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
+
+#IMG1 {
+    max-width: 45%;
+    position: relative;
+    margin-left: 47%;
+}
+
+/**  رأٍس الصفحة **/
+
+header {
+    width: 100%;
+    background-color: rgba(5, 1, 0, 255);
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0%;
+    position: absolute;
+    background: #264653;
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    margin: 0% 0% 0% 2%;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 2.5em;
+    position: relative;
+    padding-bottom: 5px;
+    left: 5px;
+    font-family: 'Markazi Text', serif;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 143, 255);
+    background: linear-gradient(80deg, rgba(0, 143, 255, 1) 0%, rgba(39, 160, 255, 1) 49%, rgba(255, 154, 0, 1) 49%, rgba(255, 154, 0, 0.9921102229954482) 100%);
+    ;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+
+}
+
+nav a:hover::after {
+    text-decoration-color: #FFD100;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-right: 8%;
+    margin-left: 2%;
+    padding-bottom: 10px;
+}
+
+button {
+    font-weight: 900;
+    width: 140px;
+    height: 50px;
+    border: 3px solid #E76F51;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #E76F51;
+    font-size: 1.3em;
+    font-weight: 550;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#button {
+    width: 140px;
+    height: 50px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+#button:hover {
+    background: #000000;
+    color: white;
+}
+
+/**  الخلفية الاولى مع النص والعنوان وزر تحريك الصفحة **/
+
+.image {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.image img {
+    content: "";
+    position: relative;
+    width: 40%;
+    right: 26%;
+}
+
+.image h2 {
+    text-align: right;
+    color: #ffffff;
+    content: "";
+    position: absolute;
+    width: 50%;
+    right: 10%;
+    height: auto;
+    /* right: 7%; */
+    top: 35%;
+    font-weight: bolder;
+    font-size: 15em;
+    line-height: 54px;
+}
+
+.image p {
+    color: #ffffffe3;
+    font-weight: lighter;
+    text-align: right;
+    content: "";
+    position: absolute;
+    width: 50%;
+    right: 15%;
+    top: 55%;
+    font-size: 4.2em;
+    line-height: 54px;
+}
+
+#B {
+    margin-top: 28%;
+    right: 22%;
+    position: absolute;
+}
+
+#B {
+    font-weight: 900;
+    width: 200px;
+    height: 70px;
+    border: 3px solid #264653;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #264653;
+    font-size: 2.5em;
+    font-weight: 550;
+    color: #ffffff;
+}
+
+.image #B:hover {
+    background: transparent;
+    color: white;
+}
+
+.image2 {
+    background: rgb(198,156,114);
+    background: linear-gradient(180deg, rgba(198,156,114,1) 5%, rgba(42,157,143,1) 11%);  
+    position: relative;
+    text-align: center;
+    color: rgb(40, 39, 39);
+    margin-top: 0%;
+}
+
+.image2 img {
+    margin-top: 5%;
+    content: "";
+    position: relative;
+    width: 40%;
+    right: 26%;
+}
+
+.image2 h2 {
+    text-align: right;
+    content: "";
+    position: absolute;
+    width: 50%;
+    right: 5%;
+    height: auto;
+    /* right: 7%; */
+    top: 33%;
+    font-weight: bolder;
+    font-size: 10em;
+    line-height: 54px;
+}
+
+.image2 p {
+    font-weight: lighter;
+    text-align: right;
+    content: "";
+    position: absolute;
+    width: 50%;
+    right: 5%;
+    top: 55%;
+    font-size: 3em;
+    line-height: 54px;
+}
