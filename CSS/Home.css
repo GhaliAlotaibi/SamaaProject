@@ -13,7 +13,7 @@
 body {
     font-weight: normal;
     font-family: 'Markazi Text', serif;
-    background: #c69c72;
+    background: #F4A261;
 }
 
 /** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
@@ -62,7 +62,7 @@ nav {
 nav a {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
     color: white;
@@ -71,7 +71,6 @@ nav a {
     position: relative;
     padding-bottom: 5px;
     right: 30px;
-    padding-left: 10px;
     font-family: 'Markazi Text', serif;
 }
 
@@ -88,7 +87,6 @@ nav a::after {
     ;
     transform-origin: bottom right;
     transition: transform 0.30s ease-out;
-
 }
 
 nav a:hover::after {
@@ -149,8 +147,8 @@ button:hover {
 /**  الخلفية الاولى مع النص والعنوان وزر تحريك الصفحة **/
 
 .image {
-    background: rgb(198, 156, 114);
-    background: linear-gradient(180deg, rgba(198, 156, 114, 1) 85%, rgba(42, 157, 143, 1) 100%);
+    background: rgb(244, 162, 97);
+    background: linear-gradient(180deg, rgba(244, 162, 97, 1) 81%, rgba(74, 117, 107, 1) 98%);
     position: relative;
     text-align: center;
     color: white;
@@ -174,7 +172,7 @@ button:hover {
     right: 10%;
     height: auto;
     /* right: 7%; */
-    top: 35%;
+    top: 30%;
     font-weight: bolder;
     font-size: 15em;
     line-height: 54px;
@@ -188,13 +186,13 @@ button:hover {
     position: absolute;
     width: 50%;
     right: 15%;
-    top: 55%;
+    top: 47%;
     font-size: 4.2em;
     line-height: 54px;
 }
 
 #B {
-    margin-top: 32%;
+    margin-top: 28%;
     right: 22%;
     position: absolute;
 }
@@ -219,11 +217,12 @@ button:hover {
 }
 
 .image1 {
-    background: #2A9D8F;
+    background: rgb(74, 117, 107);
+    background: linear-gradient(180deg, rgba(74, 117, 107, 1) 81%, rgba(68, 80, 105, 1) 98%);
     position: relative;
     text-align: center;
     color: white;
-    height: 700px;
+    height: 790px;
 }
 
 .image1 img {
@@ -262,12 +261,74 @@ button:hover {
     line-height: 54px;
 }
 
+#a {
+    color: #FFD100;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
 
 .image2 {
-    background: #000000;
+    background: rgb(68, 80, 105);
+    background: linear-gradient(180deg, rgba(68, 80, 105, 1) 86%, rgba(49, 86, 109, 1) 98%);
     position: relative;
     text-align: center;
-    height: 685px;
+    color: white;
+    height: 780px;
+}
+
+.image2 img {
+    content: "";
+    position: relative;
+    top: 1%;
+    width: 25%;
+}
+
+.image2 p {
+    color: #ffffffe3;
+    font-weight: lighter;
+    text-align: center;
+    content: "";
+    position: absolute;
+    right: 5%;
+    width: 90%;
+    top: 20%;
+    font-size: 2.3em;
+    line-height: 54px;
+}
+
+.image2 .img {
+    content: "";
+    position: absolute;
+    top: 48%;
+    width: 25%;
+    left: 38%;
+}
+
+.image2 #p {
+    color: #ffffffe3;
+    font-weight: lighter;
+    text-align: center;
+    content: "";
+    position: absolute;
+    right: 5%;
+    width: 90%;
+    top: 65%;
+    font-size: 2.3em;
+    line-height: 54px;
+}
+
+.image3 {
+    background: #31566d;
+    position: relative;
+    text-align: center;
+    height: 800px;
     color: rgb(40, 39, 39);
     margin-top: 0%;
     display: flex;
@@ -276,44 +337,24 @@ button:hover {
     align-items: center;
 }
 
-.image2 img {
-    content: "";
-    position: relative;
-    width: 40%;
-    right: 26%;
-}
-
-.image2 h2 {
+.image3 h2 {
+    color: #ffffff;
     text-align: center;
     content: "";
     position: absolute;
     width: 100%;
-    height: auto;
-    /* right: 7%; */
-    top: 5%;
+    top: 10%;
     font-weight: bolder;
     font-size: 8em;
     line-height: 54px;
 }
 
-.image2 p {
-    font-weight: lighter;
-    text-align: right;
-    content: "";
-    position: absolute;
-    width: 50%;
-    right: 5%;
-    top: 45%;
-    font-size: 3em;
-    line-height: 54px;
-}
-
 .card {
-    border: #000000 solid 5px;
+    border: #192e3a solid 5px;
     margin-top: 10%;
     width: 300px;
     height: 400px;
-    background: #f5f5f5;
+    background: #545B77;
     padding: 2rem 1.5rem;
     transition: box-shadow .3s ease, transform .2s ease;
     font-size: 3em;
@@ -327,10 +368,12 @@ button:hover {
     transition: transform .2s ease, opacity .2s ease;
 }
 
-/*Image*/
 .card-avatar {
+    background-image: url(/IMG/profile\(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     --size: 230px;
-    background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
@@ -338,8 +381,19 @@ button:hover {
     margin-bottom: 1rem;
 }
 
+.card-avatar1 {
+    background-image: url(/IMG/profile\(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --size: 230px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+}
 
-/*Card footer*/
 .card-social {
     display: flex;
     justify-content: space-around;
@@ -357,31 +411,172 @@ button:hover {
     display: block;
     padding-bottom: 10px;
     width: 50px;
-    fill: #515F65;
+    fill: #ffffff;
     cursor: pointer;
     transition: fill 0.2s ease, transform 0.2s ease;
 }
 
-/*Text*/
 .card-title {
-    color: #333;
+    color: #ffffff;
     font-size: 1em;
     font-weight: 600;
     line-height: 2rem;
 }
 
 .card-subtitle {
-    color: #859ba8;
+    color: #ffffff;
     font-size: 0.8em;
     padding-top: 30px;
 }
 
-/*Hover*/
 .card:hover {
     box-shadow: 0 8px 50px #23232333;
 }
 
 .card-social__item svg:hover {
-    fill: #232323;
+    fill: #bababa;
     transform: scale(1.1);
+}
+
+footer {
+    background: rgb(38,70,83);
+    background: linear-gradient(0deg, rgba(38,70,83,1) 88%, rgba(49,86,109,1) 100%); 
+    padding: 10px 0px;
+    text-align: center;
+    max-width: 100%;
+    top: px;
+    height: 240px;
+    position: relative;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+footer .row a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    font-size: 0.85em;
+}
+
+footer .row a:hover {
+    color: gray;
+}
+
+footer .row ul {
+    width: 100%;
+}
+
+footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+footer .row a i {
+    font-size: 4em;
+    margin: 0% 1%;
+}
+
+
+footer {
+    text-align: center;
+
+}
+
+footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+    font-size: 3em;
+}
+
+footer .row a i {
+    margin: 0% 3%;
+    font-size: 3em;
+}
+
+/**  ايقونات برامج التواصل الاجتماعي **/
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #292c3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+/* انيميشن الصفحات */
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projectG/using_camera.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <title>ترجم</title>
+</head>
+
+<body>
+
+    <!-- هذه ازرار تسجيل الدخول وانشاء الحساب مربوطة يصفحات متخصصة بتسجيل الدخول -->
+
+    <header>
+        <div class="button">
+            <a href="/HTML/signin.html">
+                <button style="font-size: 1.4em;">تسجيل دخول</button>
+            </a>
+
+            <a href="#">
+                <button id="button" style="font-size: 1.6em;">انشاء حساب</button>
+            </a>
+        </div>
+
+        <!-- وهذه شريط الصفحات كل زر مرتبط بالصفحة المسماه على زرها -->
+
+        <nav>
+            <a href="#">حسابك</a>
+            <a href="#" style="width: 145.2px;">تواصل معنا</a>
+            <a href="/HTML/store.html">متجرنا</a>
+            <a href="/projectG/using_camera.html">ترجـــم</a>
+            <a href="#" style="width: 205px;">الصفحة الرئيسية</a>
+        </nav>
+
+        <!-- وهذه صورة موقعنا (اللوقو) -->
+
+        <a class="IMG1" href="/Arabic/HTML/homeA.html">
+            <img src="/IMG/SamaaLogo 1.png" id="IMG1">
+        </a>
+    </header>
+
+    <br><br><br><br>
+
+    <section>
+        <div>
+
+            <video id="videoElement" width="640" height="480" autoplay></video>
+            <p id="result">: الحرف الذي سيتم تمثيله سيظهر هنا</p>
+
+        </div>
+
+        <div>
+
+        </div>
+
+    </section>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+
+    <script src="predict_using_model_and_camera.js"></script>
+</body>
+
+</html>

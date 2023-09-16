@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+  font-weight: normal;
+  font-family: 'Markazi Text', serif;
+  background: #F4A261;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
+
+#IMG1 {
+  max-width: 55%;
+  position: relative;
+  margin-left: 36%;
+}
+
+/**  رأٍس الصفحة **/
+
+header {
+  width: 100%;
+  background-color: rgba(5, 1, 0, 255);
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0%;
+  position: relative;
+  background: #264653;
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 25px;
+  margin: 0% 0% 0% 2%;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 2.5em;
+  position: relative;
+  padding-bottom: 5px;
+  right: 30px;
+  padding-left: 10px;
+  font-family: 'Markazi Text', serif;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 143, 255);
+  background: linear-gradient(80deg, rgba(0, 143, 255, 1) 0%, rgba(39, 160, 255, 1) 49%, rgba(255, 154, 0, 1) 49%, rgba(255, 154, 0, 0.9921102229954482) 100%);
+  ;
+  transform-origin: bottom right;
+  transition: transform 0.30s ease-out;
+}
+
+nav a:hover::after {
+  text-decoration-color: #FFD100;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  margin-right: 8%;
+  margin-left: 2%;
+  padding-bottom: 10px;
+}
+
+button {
+  font-weight: 900;
+  width: 140px;
+  height: 50px;
+  border: 3px solid #E76F51;
+  border-radius: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #E76F51;
+  font-size: 1.3em;
+  font-weight: 550;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+#button {
+  width: 140px;
+  height: 50px;
+  border: 3px solid #000000;
+  border-radius: 25px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  font-size: 1.2em;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+
+#button:hover {
+  background: #000000;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 5em;
+}
+
+section {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section1 {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(244,162,97);
+  background: linear-gradient(180deg, rgba(244,162,97,1) 73%, rgba(38,70,83,1) 98%); 
+}
+
+.card {
+  width: 350px;
+  height: 450px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  background: #ecdfbe;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 20px 40px;
+  transition: .5s;
+}
+
+.card-img {
+  margin-top: 2%;
+  height: 40%;
+  width: 100%;
+  transition: .3s ease;
+}
+
+.card_info {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 1%;
+}
+
+.card-img img {
+  margin-left: 27%;
+  width: 45%;
+}
+
+#button0 {
+  font-weight: 900;
+  border-radius: 0%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 2.3em;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  background-color: #264653;
+}
+
+#button0:hover {
+  filter: brightness(60%);
+}
+
+.card-footer {
+  margin-top: 5%;
+  width: 100%;
+  height: 15%;
+}
+
+/*Text*/
+.text-title {
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 1.5;
+}
+
+.text-title1 {
+  font-size: 3em;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.text-body {
+  color: rgb(0, 0, 0);
+  font-size: .9em;
+  padding-top: 10px;
+}
+
+footer {
+  background: #264653;
+  padding: 10px 0px;
+  text-align: center;
+  max-width: 100%;
+  top: px;
+  height: 100%;
+  position: relative;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+footer .row a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  font-size: 0.85em;
+}
+
+footer .row a:hover {
+  color: gray;
+}
+
+footer .row ul {
+  width: 100%;
+}
+
+footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+footer .row a i {
+  font-size: 4em;
+  margin: 0% 1%;
+}
+
+
+footer {
+  text-align: center;
+
+}
+
+footer .row ul li {
+  display: block;
+  margin: 10px 0px;
+  text-align: left;
+  font-size: 3em;
+}
+
+footer .row a i {
+  margin: 0% 3%;
+  font-size: 3em;
+}
+
+/**  ايقونات برامج التواصل الاجتماعي **/
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #292c3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+/* انيميشن الصفحات */
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
