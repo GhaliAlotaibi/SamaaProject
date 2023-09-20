@@ -53,7 +53,7 @@
 
 // function predict() {
 //     const frame = captureFrame();
-//     const preprocessedFrame = preprocessFrame(captureFrame);
+//     const preprocessedFrame = preprocessFrame();
 //     const prediction = model.predict(preprocessedFrame);
 //     handlePrediction(prediction);
 // }

@@ -156,7 +156,13 @@ div {
     margin-left: 57.8%;
 }
 
-#result {
+#label-container {
     font-size: 5em;
-    margin-right: 3%;
+    margin-left: 660px;
+}
+#start {
+    margin: 50px 0px 0px 660px;
+}
+canvas {
+    margin: 10px 0px 0px -350px;
 }
