@@ -45,7 +45,7 @@
 
     <br><br><br><br>
 
-    <section>
+    <!-- <section>
         <div>
 
             <video id="videoElement" width="640" height="480" autoplay></video>
@@ -57,12 +57,23 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
-
-    <script src="predict_using_model_and_camera.js"></script>
+<div id="webcam-container">
+    <button type="button" onclick="init()" id="start">ابدأ</button>
+</div>
+<div id="label-container1">
+    <h6 style="text-align: center;">: الحرف الذي يتم تمثيله سيظهر هنا</h6>
+    <br>
+    <div id="label-container">
+    </div>
+</div>
+    <img src="/IMG/letters.PNG" id="letters_img">
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="/projectG/predict_using_model_and_camera.js"></script>
 </body>
 
 </html>
