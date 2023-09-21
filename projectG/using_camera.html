@@ -33,7 +33,7 @@
             <a href="#" style="width: 145.2px;">تواصل معنا</a>
             <a href="/HTML/store.html">متجرنا</a>
             <a href="/projectG/using_camera.html">ترجـــم</a>
-            <a href="#" style="width: 205px;">الصفحة الرئيسية</a>
+            <a href="/HTML/Home.html" style="width: 205px;">الصفحة الرئيسية</a>
         </nav>
 
         <!-- وهذه صورة موقعنا (اللوقو) -->
@@ -61,8 +61,6 @@
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
-
-    <!-- <script src="predict_using_model_and_camera.js"></script> -->
     <button type="button" onclick="init()" id="start">Start</button>
 <div id="webcam-container"></div>
 <div id="label-container"></div>
@@ -117,7 +115,6 @@
         const classPrediction =
             maxPrediction.className + ": " + maxPrediction.probability.toFixed(1);
         labelContainer.innerHTML = classPrediction;
-        // requestAnimationFrame(predict);
 }
 
 </script>
