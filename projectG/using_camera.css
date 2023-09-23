@@ -152,17 +152,49 @@ section {
     text-align: right;
 }
 
-div {
-    margin-left: 57.8%;
+#webcam-container {
+    position: relative;
+    /* width: 700px; */
+    height: 369px;
+    border: 10px #264653 solid;
+    margin: 1.97% 0% 0px 53.2%;
+    background-color: #000000;
 }
 
-#label-container {
+#label-container1 {
+    position: relative;
     font-size: 5em;
-    margin-left: 660px;
+    border: 10px #264653 solid;
+    /* background-color: #264653; */
+    /* width: 700px; */
+    height: 200px;
+    margin: 0% 0% 0% 53.2%;
+}
+#label-container {
+    font-size: 1.2em;
+    margin: -10% 0% 0% 47%;
+
 }
 #start {
-    margin: 50px 0px 0px 660px;
+    position: relative;
+    left: 39%;
+    top: 40%;
+    width: 180px;
+    font-size: 2em;
+    font-weight: bolder;
+    height: 50px;
 }
+
 canvas {
-    margin: 10px 0px 0px -350px;
+    position: relative;
+    /* right: -90%; */
+    /* width: 500px; */
+    bottom:50px;
+}
+#letters_img {
+    position: relative;
+    border: 10px #264653 solid;
+    bottom: 609px;
+    width: 52%;
+    height: 590px;
 }

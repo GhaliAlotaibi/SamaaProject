@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+    font-weight: normal;
+    font-family: 'Markazi Text', serif;
+    background: #264653;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
+
+#IMG1 {
+    width: 120px;
+    position: relative;
+    margin: 1% .5% 0% 0%;
+}
+
+.arrow {
+    position: absolute;
+    background-color: #EF8F43;
+    border-bottom-right-radius: 90%;
+    width: 120px;
+    height: 95px;
+    margin: -5% 92.2% 0% 0%;
+}
+
+#IMG2 {
+    position: absolute;
+    width: 80px;
+    margin: -.2% 85.8% 0% 0%;
+}
+
+section {
+    position: relative;
+    text-align: right;
+    margin: -3% 3% 0% 0%;
+}
+
+section h1 {
+    color: #EF8F43;
+    font-size: 6em;
+    line-height: 110px;
+}
+
+section p {
+    color: #EAAE7F;
+    font-size: 1.8em;
+    width: 50%;
+}
+
+
+.buttons {
+    position: relative;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 50%;
+    height: 90px;
+}
+
+#addcart {
+    width: 80%;
+    background-color: #EF8F43;
+    font-size: 4em;
+    color: white;
+}
+
+#like {
+    width: 20%;
+    border: 5px #EF8F43 solid;
+    background: transparent;
+    font-size: 1.9em;
+}
+
+#buynow {
+    position: relative;
+    margin-top: .5%;
+    width: 50%;
+    height: 90px;
+    background-color: #EF8F43;
+    font-size: 4em;
+    color: white;
+}
+
+.products img {
+    position: relative;
+    margin: 0% 0% 0% 50%;
+}

@@ -1,61 +1,49 @@
-// /*
-// DO THIS AFTER SAVING THE MODEL FROM PYTHON CODE
-// Here we will load the model that we saved, and put the path for the model.
-// */
+// More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 
-// // Load the TensorFlow.js library
-// // import * as tf from '@tensorflow/tfjs';
+    // the link to your model provided by Teachable Machine export panel
+    // const URL = "./keras_model.h5";
 
-// // Load the model
-// let model;
-// alpha = ["0","1","2", "3", "4", "5", "6", "7", "8", "9",
-//          "A","B","C","D","E","F","G","H","I","J",
-//          "K","L","M","N","O","P","Q","R","S","T",
-//           "V","W","X","Y","Z"];
-// async function loadModel() {
-//     model = await tf.loadLayersModel('./content/model.json');
-// }
-// loadModel();
+    let model, webcam, labelContainer, maxPredictions;
 
-// // Capture video from the webcam
-// const video = document.getElementById('videoElement');
-// navigator.mediaDevices.getUserMedia({ video: true })
-//     .then(stream => {
-//         video.srcObject = stream;
-//     })
-//     .catch(err => {
-//         console.error("Error accessing the camera", err);
-//     });
+    // Load the image model and setup the webcam
+    async function init() {
+        const modelURL = "./content/model.json";
+        const metadataURL = "./content/metadata.json";
 
-// function captureFrame() {
-//     const canvas = document.createElement('canvas');
-//     canvas.width = video.videoWidth;
-//     canvas.height = video.videoHeight;
-//     const ctx = canvas.getContext('2d');
-//     ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-//     return tf.browser.fromPixels(canvas);
-// }
+        // load the model and metadata
+        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+        // or files from your local hard drive
+        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
 
-// function preprocessFrame(frame) {
-//     const resized = tf.image.resizeBilinear(frame, [224, 224]);
-//     const normalized = resized.div(tf.scalar(255));
-//     const batched = normalized.expandDims(0);
-//     return batched;
-// }
+        // Convenience function to setup a webcam
+        const flip = true; // whether to flip the webcam
+        webcam = new tmImage.Webcam(694, 370, flip); // width, height, flip
+        await webcam.setup(); // request access to the webcam
+        await webcam.play();
+        window.requestAnimationFrame(loop);
 
-// function handlePrediction(prediction) {
-//     prediction.array().then(array => {
-//         const maxIndex = array[0].indexOf(Math.max(...array[0]));
-//         const resultElement = document.getElementById('result');
-//         resultElement.textContent = `${alpha[maxIndex]} : الحرف الذي سيتم تمثيله سيظهر هنا`; 
-//     });
-// }
+        // append elements to the DOM
+        document.getElementById("webcam-container").appendChild(webcam.canvas);
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) { // and class labels
+            labelContainer.appendChild(document.createElement("div"));
+        }
+    }
 
-// function predict() {
-//     const frame = captureFrame();
-//     const preprocessedFrame = preprocessFrame();
-//     const prediction = model.predict(preprocessedFrame);
-//     handlePrediction(prediction);
-// }
-
-// setInterval(predict, 100);
+    async function loop() {
+        webcam.update(); // update the webcam frame
+        await predict();
+        window.requestAnimationFrame(loop);
+    }
+    async function predict() {
+        const prediction = await model.predict(webcam.canvas);
+        const maxPrediction = prediction.reduce((maxPrediction2, currentPrediction) => {
+            return (currentPrediction.probability > maxPrediction2.probability) ? currentPrediction : maxPrediction2 ;
+        });
+        const classPrediction =
+            maxPrediction.className
+        labelContainer.innerHTML = classPrediction;
+}
