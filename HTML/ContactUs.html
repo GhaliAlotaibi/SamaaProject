@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/ContactUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <title>تواصل معنا</title>
+</head>
+<body dir="rtl">
+    <!-- هذه ازرار تسجيل الدخول وانشاء الحساب مربوطة يصفحات متخصصة بتسجيل الدخول -->
+
+    <header dir="ltr">
+        <div class="button">
+            <a href="/HTML/signin.html">
+                <button style="font-size: 1.4em;">تسجيل دخول</button>
+            </a>
+
+            <a href="#">
+                <button id="button" style="font-size: 1.6em;">انشاء حساب</button>
+            </a>
+        </div>
+
+        <!-- وهذه شريط الصفحات كل زر مرتبط بالصفحة المسماه على زرها -->
+
+        <nav>
+            <a href="#">حسابك</a>
+            <a href="/HTML/ContactUs.html" style="width: 145.2px;">تواصل معنا</a>
+            <a href="/HTML/store.html">متجرنا</a>
+            <a href="/projectG/using_camera.html">ترجـــم</a>
+            <a href="/HTML/Home.html" style="width: 205px;">الصفحة الرئيسية</a>
+        </nav>
+
+        <!-- وهذه صورة موقعنا (اللوقو) -->
+
+        <a class="IMG1" href="/Arabic/HTML/homeA.html">
+            <img src="/IMG/SamaaLogo 1.png" id="IMG1">
+        </a>
+    </header>
+
+    <div class="contact-form">
+        
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2 style="font-size: 2.5em;">تواصل معنا</h2>
+                    <form action="#" method="post">
+                        <div style="display: flex; flex-direction: row;">
+                            <input type="text" name="name" placeholder="الاسم الاول" style="width: 50%;">
+                            <input type="text" name="name" placeholder="الاسم الاخير" style="width: 50%;">
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: row;">
+                            <input type="email" name="name" placeholder="الايميل" style="width: 70%;">
+                        <select name="" id="" style="width: 30%; height: 52.5px; font-size: 1.5em; text-align: center;">
+                            <option value="">البلد</option>
+                            <option value="">السعودية</option>
+                            <option value="">عمان</option>
+                            <option value="">الامارات</option>
+                            <option value="">الكويت</option>
+                            <option value="">البحرين</option>
+                            <option value="">قطر</option>
+                        </select>
+                        </div>
+                        
+                        <textarea name="message" placeholder="سبب التواصل" style="font-size: 2em; height: 160px;"></textarea>                   
+             <button type="submit" class="btn">ارسال<i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="form-img">
+                    <img src="/IMG/5143086-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>

@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+    font-weight: normal;
+    font-family: 'Markazi Text', serif;
+    background: #F4A261;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+#IMG1 {
+    max-width: 55%;
+    position: relative;
+    margin-left: 36%;
+}
+
+/**  رأٍس الصفحة **/
+
+header {
+    width: 100%;
+    background-color: rgba(5, 1, 0, 255);
+    height: 16.6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0%;
+    position: absolute;
+    background: #264653;
+}
+
+/**  شريط صفحات الموقع **/
+
+nav {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    margin: 0% 0% 0% 2%;
+}
+
+/**  الكلام الي بالشريط **/
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 2.5em;
+    position: relative;
+    padding-bottom: 5px;
+    right: 30px;
+    font-family: 'Markazi Text', serif;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 143, 255);
+    background: linear-gradient(80deg, rgba(0, 143, 255, 1) 0%, rgba(39, 160, 255, 1) 49%, rgba(255, 154, 0, 1) 49%, rgba(255, 154, 0, 0.9921102229954482) 100%);
+    ;
+    transform-origin: bottom right;
+    transition: transform 0.30s ease-out;
+}
+
+nav a:hover::after {
+    text-decoration-color: #FFD100;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    margin-right: 8%;
+    margin-left: 2%;
+    padding-bottom: 10px;
+}
+
+button {
+    font-weight: 900;
+    width: 140px;
+    height: 50px;
+    border: 3px solid #E76F51;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #E76F51;
+    font-size: 1.3em;
+    font-weight: 550;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#button {
+    width: 140px;
+    height: 50px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+
+#button:hover {
+    background: #000000;
+    color: white;
+}
+.image1 {
+    background: rgb(74, 117, 107);
+    background: linear-gradient(180deg, rgba(74, 117, 107, 1) 81%, rgba(68, 80, 105, 1) 98%);
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 790px;
+}
+
+.image1 img {
+    content: "";
+    position: relative;
+    width: 33%;
+    top: 4%;
+    right: 30%;
+}
+
+.image1 h2 {
+    text-align: right;
+    color: #ffffff;
+    content: "";
+    position: absolute;
+    width: 80%;
+    right: 5%;
+    height: auto;
+    /* right: 7%; */
+    top: 19%;
+    font-weight: bolder;
+    font-size: 10em;
+    line-height: 54px;
+    top: 100px;
+}
+
+.image1 p {
+    color: #ffffffe3;
+    font-weight: lighter;
+    text-align: right;
+    content: "";
+    position: absolute;
+    width: 55%;
+    right: 5%;
+    /* top: 40%; */
+    font-size: 2.5em;
+    line-height: 54px;
+    top: 250px;
+}
+
+#a {
+    color: #FFD100;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: .5s;
+}
+
+#a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.image2 {
+    background: rgb(68, 80, 105);
+    background: linear-gradient(180deg, rgba(68, 80, 105, 1) 86%, rgba(49, 86, 109, 1) 98%);
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 780px;
+}
+
+.image2 img {
+    content: "";
+    position: relative;
+    top: 1%;
+    width: 25%;
+}
+
+.image2 p {
+    color: #ffffffe3;
+    font-weight: lighter;
+    text-align: center;
+    content: "";
+    position: absolute;
+    right: 5%;
+    width: 90%;
+    top: 20%;
+    font-size: 2.3em;
+    line-height: 54px;
+}
+
+.image2 .img {
+    content: "";
+    position: absolute;
+    top: 48%;
+    width: 25%;
+    left: 38%;
+}
+
+.image2 #p {
+    color: #ffffffe3;
+    font-weight: lighter;
+    text-align: center;
+    content: "";
+    position: absolute;
+    right: 5%;
+    width: 90%;
+    top: 65%;
+    font-size: 2.3em;
+    line-height: 54px;
+}
+
+.image3 {
+    background: #31566d;
+    position: relative;
+    text-align: center;
+    height: 800px;
+    color: rgb(40, 39, 39);
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image3 h2 {
+    color: #ffffff;
+    text-align: center;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    font-weight: bolder;
+    font-size: 8em;
+    line-height: 54px;
+}
+
+.image4 {
+    background: #31566d;
+    position: relative;
+    text-align: center;
+    height: 800px;
+    color: rgb(40, 39, 39);
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image4 h2 {
+    color: #ffffff;
+    text-align: center;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    font-weight: bolder;
+    font-size: 8em;
+    line-height: 54px;
+}
+
+.image3 .card {
+    border: #192e3a solid 5px;
+    margin-top: 10%;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background: #545B77;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+    font-size: 3em;
+}
+
+.image4 .card {
+    border: #192e3a solid 5px;
+    margin-top: -20%;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background: #545B77;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+    font-size: 3em;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.card-avatar {
+    background-image: url(/IMG/profile\(2\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --size: 230px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+}
+
+.card-avatar1 {
+    background-image: url(/IMG/profile\(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --size: 230px;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    transition: transform .2s ease;
+    margin-bottom: 1rem;
+}
+
+.card-social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    opacity: 1;
+    transition: transform .2s ease, opacity .2s ease;
+    padding-top: 10px;
+}
+
+.card-social__item {
+    list-style: none;
+}
+
+.card-social__item svg {
+    display: block;
+    padding-bottom: 10px;
+    width: 50px;
+    fill: #ffffff;
+    cursor: pointer;
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.card-title {
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.card-subtitle {
+    color: #ffffff;
+    font-size: 0.8em;
+    padding-top: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 50px #23232333;
+}
+
+.card-social__item svg:hover {
+    fill: #bababa;
+    transform: scale(1.1);
+}
