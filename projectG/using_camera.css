@@ -13,7 +13,7 @@
 body {
     font-weight: normal;
     font-family: 'Markazi Text', serif;
-    background: #F4A261;
+    background: #E76F51;
 }
 
 /** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
@@ -25,9 +25,9 @@ html {
 /** اللوقو  **/
 
 #IMG1 {
-    max-width: 55%;
     position: relative;
-    margin-left: 36%;
+    margin-left: 8%;
+    width: 130px;
 }
 
 /**  رأٍس الصفحة **/
@@ -35,89 +35,45 @@ html {
 header {
     width: 100%;
     background-color: rgba(5, 1, 0, 255);
-    height: 15vh;
+    height: 12vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 0%;
-    position: absolute;
-    background: #264653;
+    position: relative;
+    background: #31566d;
 }
 
 /**  شريط صفحات الموقع **/
 
-nav {
-    font-weight: bolder;
+.naV {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 25px;
-    margin: 0% 0% 0% 2%;
-}
-
-/**  الكلام الي بالشريط **/
-
-nav a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-weight: lighter;
-    font-size: 2.5em;
+    flex-direction: row-reverse;
     position: relative;
-    padding-bottom: 5px;
-    right: 30px;
-    font-family: 'Markazi Text', serif;
+    gap: 50px;
+    align-items: center;
+    margin: 0% 0% 0% 7%;
 }
 
-nav a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 143, 255);
-    background: linear-gradient(80deg, rgba(0, 143, 255, 1) 0%, rgba(39, 160, 255, 1) 49%, rgba(255, 154, 0, 1) 49%, rgba(255, 154, 0, 0.9921102229954482) 100%);
-    ;
-    transform-origin: bottom right;
-    transition: transform 0.30s ease-out;
+.naV img {
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
-nav a:hover::after {
-    text-decoration-color: #FFD100;
-    transform: scaleX(1);
-    transform-origin: bottom right;
-}
-
-/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
-
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px;
-    margin-right: 8%;
-    margin-left: 2%;
-    padding-bottom: 10px;
+.naV img:hover {
 }
 
 button {
     font-weight: 900;
-    width: 140px;
-    height: 50px;
+    width: 200px;
+    height: 60px;
     border: 3px solid #E76F51;
     border-radius: 25px;
     transition: all 0.3s;
     cursor: pointer;
     background: #E76F51;
-    font-size: 1.3em;
-    font-weight: 550;
+    font-size: 2.3em;
     color: #ffffff;
 }
 
@@ -126,26 +82,7 @@ button:hover {
     color: white;
 }
 
-#button {
-    width: 140px;
-    height: 50px;
-    border: 3px solid #000000;
-    border-radius: 25px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background: rgb(0, 0, 0);
-    font-size: 1.2em;
-    font-weight: normal;
-    color: rgb(255, 255, 255);
-}
-
-#button:hover {
-    background: #000000;
-    color: white;
-}
-
 section {
-    margin-top: 1.5%;
     background-color: #E76F51;
     display: flex;
     flex-direction: row;
@@ -154,30 +91,29 @@ section {
 
 #webcam-container {
     position: relative;
-    /* width: 700px; */
-    height: 369px;
-    border: 10px #264653 solid;
-    margin: 1.97% 0% 0px 53.2%;
+    height: 370px;
+    width: 48%;
+    border: 10px #31566d solid;
     background-color: #000000;
+    margin-left: ;
 }
 
 #label-container1 {
-    position: relative;
+    position: absolute;
     font-size: 5em;
-    border: 10px #264653 solid;
-    /* background-color: #264653; */
-    /* width: 700px; */
-    height: 200px;
-    margin: 0% 0% 0% 53.2%;
+    border: 10px #31566d solid;
+    width: 48%;
+    height: 220px;
+    bottom: 1px;
 }
 #label-container {
     font-size: 1.2em;
     margin: -10% 0% 0% 47%;
-
+    position: relative;
 }
 #start {
     position: relative;
-    left: 39%;
+    left: -36%;
     top: 40%;
     width: 180px;
     font-size: 2em;
@@ -185,16 +121,9 @@ section {
     height: 50px;
 }
 
-canvas {
-    position: relative;
-    /* right: -90%; */
-    /* width: 500px; */
-    bottom:50px;
-}
 #letters_img {
     position: relative;
-    border: 10px #264653 solid;
-    bottom: 609px;
-    width: 52%;
-    height: 590px;
+    border: 10px #31566d solid;
+    width: 752.4px;
+    height: 607px;
 }

@@ -13,7 +13,7 @@
 body {
     font-weight: normal;
     font-family: 'Markazi Text', serif;
-    background: #F4A261;
+    background: #E76F51;
 }
 
 /** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
@@ -25,9 +25,10 @@ html {
 /** اللوقو  **/
 
 #IMG1 {
-    max-width: 55%;
     position: relative;
-    margin-left: 36%;
+    margin-left: 8%;
+    margin-bottom: .5%;
+    width: 130px;
 }
 
 /**  رأٍس الصفحة **/
@@ -35,90 +36,47 @@ html {
 header {
     width: 100%;
     background-color: rgba(5, 1, 0, 255);
-    height: 15vh;
+    height: 12vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 0%;
     position: absolute;
-    background: #264653;
+    background: #31566d;
 }
 
 /**  شريط صفحات الموقع **/
 
-nav {
-    font-weight: bolder;
+.naV {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 25px;
-    margin: 0% 0% 0% 2%;
-}
-
-/**  الكلام الي بالشريط **/
-
-nav a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-weight: lighter;
-    font-size: 2.5em;
     position: relative;
-    padding-bottom: 5px;
-    right: 30px;
-    font-family: 'Markazi Text', serif;
+    gap: 50px;
+    align-items: center;
+    margin: 0% 0% 0% 7%;
 }
 
-nav a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 143, 255);
-    background: linear-gradient(80deg, rgba(0, 143, 255, 1) 0%, rgba(39, 160, 255, 1) 49%, rgba(255, 154, 0, 1) 49%, rgba(255, 154, 0, 0.9921102229954482) 100%);
-    ;
-    transform-origin: bottom right;
-    transition: transform 0.30s ease-out;
+.naV img {
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
-nav a:hover::after {
-    text-decoration-color: #FFD100;
-    transform: scaleX(1);
-    transform-origin: bottom right;
-}
-
-/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
-
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px;
-    margin-right: 8%;
-    margin-left: 2%;
-    padding-bottom: 10px;
+.naV img:hover {
 }
 
 button {
     font-weight: 900;
-    width: 140px;
-    height: 50px;
+    width: 200px;
+    height: 60px;
     border: 3px solid #E76F51;
     border-radius: 25px;
     transition: all 0.3s;
     cursor: pointer;
     background: #E76F51;
-    font-size: 1.3em;
-    font-weight: 550;
+    font-size: 2.3em;
     color: #ffffff;
+    margin-left: 22%;
 }
 
 button:hover {
@@ -126,29 +84,10 @@ button:hover {
     color: white;
 }
 
-#button {
-    width: 140px;
-    height: 50px;
-    border: 3px solid #000000;
-    border-radius: 25px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background: rgb(0, 0, 0);
-    font-size: 1.2em;
-    font-weight: normal;
-    color: rgb(255, 255, 255);
-}
-
-#button:hover {
-    background: #000000;
-    color: white;
-}
-
 /**  الخلفية الاولى مع النص والعنوان وزر تحريك الصفحة **/
 
 .image {
-    background: rgb(244, 162, 97);
-    background: linear-gradient(180deg, rgba(244, 162, 97, 1) 81%, rgba(74, 117, 107, 1) 98%);
+    background: #E76F51;
     position: relative;
     text-align: center;
     color: white;
@@ -159,7 +98,7 @@ button:hover {
 .image img {
     content: "";
     position: relative;
-    width: 40%;
+    width: 35%;
     right: 26%;
 }
 
@@ -172,9 +111,9 @@ button:hover {
     right: 10%;
     height: auto;
     /* right: 7%; */
-    top: 30%;
+    top: 26%;
     font-weight: bolder;
-    font-size: 15em;
+    font-size: 14em;
     line-height: 54px;
 }
 
@@ -186,14 +125,14 @@ button:hover {
     position: absolute;
     width: 50%;
     right: 15%;
-    top: 47%;
-    font-size: 4.2em;
+    top: 43%;
+    font-size: 3.7em;
     line-height: 54px;
 }
 
 #B {
-    margin-top: 28%;
-    right: 22%;
+    margin-top: 25%;
+    right: 19%;
     position: absolute;
 }
 
@@ -201,11 +140,11 @@ button:hover {
     font-weight: 900;
     width: 200px;
     height: 70px;
-    border: 3px solid #264653;
+    border: 3px solid #31566d;
     border-radius: 25px;
     transition: all 0.3s;
     cursor: pointer;
-    background: #264653;
+    background: #31566d;
     font-size: 2.5em;
     font-weight: 550;
     color: #ffffff;
@@ -217,11 +156,10 @@ button:hover {
 }
 
 .image1 {
-    background: rgb(74, 117, 107);
-    background: linear-gradient(180deg, rgba(74, 117, 107, 1) 81%, rgba(68, 80, 105, 1) 98%);
+    background: #31566d;
     position: relative;
     text-align: center;
-    color: white;
+    color: #ffffff;
     height: 790px;
 }
 
@@ -229,13 +167,12 @@ button:hover {
     content: "";
     position: relative;
     width: 33%;
-    top: 10%;
-    right: 30%;
+    top: 11%;
+    right: 29%;
 }
 
 .image1 h2 {
     text-align: right;
-    color: #ffffff;
     content: "";
     position: absolute;
     width: 80%;
@@ -244,25 +181,24 @@ button:hover {
     /* right: 7%; */
     top: 19%;
     font-weight: bolder;
-    font-size: 10em;
+    font-size: 9em;
     line-height: 54px;
 }
 
 .image1 p {
-    color: #ffffffe3;
     font-weight: lighter;
     text-align: right;
     content: "";
     position: absolute;
-    width: 55%;
+    width: 50%;
     right: 5%;
-    top: 40%;
+    top: 35%;
     font-size: 2.5em;
     line-height: 54px;
 }
 
 #a {
-    color: #FFD100;
+    color: #ff7c5c;
     cursor: pointer;
     font-weight: bolder;
     text-decoration: none;
@@ -275,8 +211,7 @@ button:hover {
 }
 
 .image2 {
-    background: rgb(68, 80, 105);
-    background: linear-gradient(180deg, rgba(68, 80, 105, 1) 86%, rgba(49, 86, 109, 1) 98%);
+    background: #E76F51;
     position: relative;
     text-align: center;
     color: white;
@@ -307,8 +242,8 @@ button:hover {
     content: "";
     position: absolute;
     top: 48%;
-    width: 25%;
-    left: 38%;
+    width: 29%;
+    left: 36%;
 }
 
 .image2 #p {
@@ -345,16 +280,16 @@ button:hover {
     width: 100%;
     top: 10%;
     font-weight: bolder;
-    font-size: 8em;
+    font-size: 6em;
     line-height: 54px;
 }
 
 .card {
-    border: #192e3a solid 5px;
+    border: #162630 solid 5px;
     margin-top: 10%;
     width: 300px;
     height: 400px;
-    background: #545B77;
+    background: #e16445;
     padding: 2rem 1.5rem;
     transition: box-shadow .3s ease, transform .2s ease;
     font-size: 3em;
@@ -434,19 +369,17 @@ button:hover {
 }
 
 .card-social__item svg:hover {
-    fill: #bababa;
+    fill: #31566d;
     transform: scale(1.1);
 }
 
 footer {
-    background: rgb(38,70,83);
-    background: linear-gradient(0deg, rgba(38,70,83,1) 88%, rgba(49,86,109,1) 100%); 
+    background: #E76F51; 
     padding: 10px 0px;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
     top: px;
-    height: 240px;
-    position: relative;
+    height: 140px;
 }
 
 .img {
@@ -518,7 +451,7 @@ footer .row a i {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: #292c3b;
+    background: #31566d;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -11,66 +11,61 @@
     <title>ترجم</title>
 </head>
 
-<body>
+<body dir="rtl">
 
     <!-- هذه ازرار تسجيل الدخول وانشاء الحساب مربوطة يصفحات متخصصة بتسجيل الدخول -->
 
     <header>
-        <div class="button">
-            <a href="/HTML/signin.html">
-                <button style="font-size: 1.4em;">تسجيل دخول</button>
-            </a>
-
-            <a href="#">
-                <button id="button" style="font-size: 1.6em;">انشاء حساب</button>
-            </a>
-        </div>
+        <img src="/IMG/SamaaLogo 1.png" id="IMG1">
 
         <!-- وهذه شريط الصفحات كل زر مرتبط بالصفحة المسماه على زرها -->
 
         <nav>
-            <a href="#">حسابك</a>
-            <a href="#" style="width: 145.2px;">تواصل معنا</a>
-            <a href="/HTML/store.html">متجرنا</a>
-            <a href="/projectG/using_camera.html">ترجـــم</a>
-            <a href="#" style="width: 205px;">الصفحة الرئيسية</a>
+
+            <div class="naV">
+                <a href="#"><img src="/IMG/تواصل.png" width="130px"></a>
+                <a href="#"><img src="/IMG/عن شركتنا.png" width="110px" style="margin-bottom: 5px;"></a>
+                <a href="#"><img src="/IMG/تبرع.png" width="90px"></a>
+                <a href="/HTML/store.html"><img src="/IMG/متجرنا.png" width="140px" style="margin-top: 5px;"></a>
+                <a href="/projectG/using_camera.html"><img src="/IMG/ترجم.png" width="100px" style="margin-top: 15px;"></a>
+                <a href="#"><img src="/IMG/الرئيسية.png" width="140px"></a>
+            </div>
+
         </nav>
 
         <!-- وهذه صورة موقعنا (اللوقو) -->
 
-        <a class="IMG1" href="/Arabic/HTML/homeA.html">
-            <img src="/IMG/SamaaLogo 1.png" id="IMG1">
-        </a>
+            
+            <div class="button">
+                <a href="/HTML/signin.html">
+                    <button>تسجيل دخول</button>
+                </a>
+            </div>
+
     </header>
 
-    <br><br><br><br>
 
-    <!-- <section>
-        <div>
-
-            <video id="videoElement" width="640" height="480" autoplay></video>
-            <p id="result">: الحرف الذي سيتم تمثيله سيظهر هنا</p>
-
-        </div>
-
-        <div>
-
-        </div>
-
-    </section> -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
-<div id="webcam-container">
-    <button type="button" onclick="init()" id="start">ابدأ</button>
-</div>
+    
+    <div style="display: flex; flex-direction: row; height: 10px;">
+
+        <div id="webcam-container">
+            <button type="button" onclick="init()" id="start">ابدأ</button>
+        </div>
+
+        <div>
+            <img src="/IMG/letters.PNG" id="letters_img">
+        </div>
+
+    </div>
+
 <div id="label-container1">
     <h6 style="text-align: center;">: الحرف الذي يتم تمثيله سيظهر هنا</h6>
     <br>
     <div id="label-container">
     </div>
 </div>
-    <img src="/IMG/letters.PNG" id="letters_img">
+
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 <script src="/projectG/predict_using_model_and_camera.js"></script>
