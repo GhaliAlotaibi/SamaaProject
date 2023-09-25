@@ -1,0 +1,132 @@
+* {
+    font-family: 'Markazi Text', serif;
+  }
+  
+  /**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+  
+  @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+  
+  body {
+    background-color: #aa7e73ae;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    text-align: right;
+  }
+  
+  a {
+    color: #16425B;
+    text-decoration: none;
+    font-weight: 900;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .box-form {
+    margin: auto;
+    margin-top: 2%;
+    width: 90%;
+    height: 650px;
+    background: #E76F51;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .box-form .left {
+    background-color: #31566d;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-image: url(/IMG/11104-removebg-preview.png);
+    background-position-x: center;
+    background-position-y: center;
+    overflow: hidden;
+    width: 700px;
+  }
+  
+  .box-form .right {
+    padding: 40px;
+    overflow: hidden;
+    width: 50%;
+  }
+  
+  @media (max-width: 980px) {
+    .box-form .right {
+      width: 100%;
+    }
+  }
+  
+  .box-form .right h5 {
+    font-size: 5em;
+    line-height: 0;
+    color: #ffffff;
+  }
+  
+  .box-form .right p {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin-right: -3%;
+    position: relative;
+    bottom: 50px;
+  }
+  
+  .box-form .right .inputs {
+    right: 20%;
+  }
+  
+  .box-form .right input {
+    text-align: right;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #B0B3B9;
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .box-form .right .remember-me--forget-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -9%;
+    color: #ffffff;
+  }
+  
+  .box-form .right .remember-me--forget-password input {
+    width: auto;
+  }
+  
+  .box-form .right #sub {
+    color: #ffffff;
+    font-size: 1.7em;
+    border-radius: 50px;
+    display: inline-block;
+    border: 3px solid #31566d;
+    outline: 0;
+    background-color: #31566d;
+    margin-right: 29%;
+    transition: .3s;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    top: 100px;
+  }
+  
+  .box-form .right #sub:hover {
+    background: transparent;
+    color: #16425B;
+    border-color: #31566d;
+  }
+  
+  .box-form .right .remember-me--forget-password p {
+    margin-bottom: 20%;
+    font-size: 1.7em;
+  }
+  .text-checkbox {
+    position: relative;
+    bottom: 100px;
+    left: 430px;
+  }

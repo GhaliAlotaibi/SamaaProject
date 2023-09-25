@@ -13,7 +13,7 @@
 body {
     font-weight: normal;
     font-family: 'Markazi Text', serif;
-    background: #F4A261;
+    background: #31566d;
 }
 
 /** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
@@ -22,225 +22,123 @@ html {
     scroll-behavior: smooth;
 }
 
-/** اللوقو  **/
-
-#IMG1 {
-    max-width: 55%;
-    position: relative;
-    margin-left: 36%;
-}
-
-/**  رأٍس الصفحة **/
-
-header {
-    width: 100%;
-    background-color: rgba(5, 1, 0, 255);
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0%;
-    position: relative;
-    background: #264653;
-}
-
-/**  شريط صفحات الموقع **/
-
-nav {
-    font-weight: bolder;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 25px;
-    margin: 0% 0% 0% 2%;
-}
-
-/**  الكلام الي بالشريط **/
-
-nav a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-weight: lighter;
-    font-size: 2.5em;
-    position: relative;
-    padding-bottom: 5px;
-    right: 30px;
-    font-family: 'Markazi Text', serif;
-}
-
-nav a::after {
-    content: '';
+.arrow {
     position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 143, 255);
-    background: linear-gradient(80deg, rgba(0, 143, 255, 1) 0%, rgba(39, 160, 255, 1) 49%, rgba(255, 154, 0, 1) 49%, rgba(255, 154, 0, 0.9921102229954482) 100%);
-    ;
-    transform-origin: bottom right;
-    transition: transform 0.30s ease-out;
+    background-color: #e76f512e;
+    border-bottom-right-radius: 90%;
+    width: 90px;
+    height: 75px;
+    margin: -18% 94.1% 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-nav a:hover::after {
-    text-decoration-color: #FFD100;
-    transform: scaleX(1);
-    transform-origin: bottom right;
-}
-
-/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
-
-.button {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px;
-    margin-right: 8%;
-    margin-left: 2%;
-    padding-bottom: 10px;
-}
-
-button {
-    font-weight: 900;
-    width: 140px;
-    height: 50px;
-    border: 3px solid #E76F51;
-    border-radius: 25px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background: #E76F51;
-    font-size: 1.3em;
-    font-weight: 550;
-    color: #ffffff;
-}
-
-button:hover {
-    background-color: transparent;
-    color: white;
-}
-
-#button {
-    width: 140px;
-    height: 50px;
-    border: 3px solid #000000;
-    border-radius: 25px;
-    transition: all 0.3s;
-    cursor: pointer;
-    background: rgb(0, 0, 0);
-    font-size: 1.2em;
-    font-weight: normal;
-    color: rgb(255, 255, 255);
-}
-
-#button:hover {
-    background: #000000;
-    color: white;
+#IMG2 {
+    position: absolute;
+    width: 45px;
+    margin: -17.7% 96.3% 0% 0%;
 }
 
 .contact-form{
     position: relative;
-    z-index: 0;
     padding: 30px;
     justify-content: center;
-    display: grid;
-    grid-template-rows: 1fr auto 1fr;
+    display: flex;
     align-items: center;
     height: 100px;
-    margin-top: -2%;
+    margin-top: 18%;
 }
+
 .container{
-    width: 1100px;
+    width: 1300px;
 }
-.contact-form h1{
-    text-align: center;
-    font-size: 4.5rem;
-    font-weight: 400;
-    color: #000000;
-}
+
 .contact-form h2{
-    line-height: 40px;
-    margin-bottom: 5px;
-    font-size: 30px;
+    font-size: 5em;
     font-weight: 500;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
+    position: relative;
+    margin-bottom: 5%;
 }
+
 .contact-form .main{
     position: relative;
     display: flex;
-    margin: 30px 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
+
 .content{
-    flex-basis: 50%;
+    position: relative;
     padding: 3em 3em;
-    background-color: #ffffff;
-    /* box-shadow: 2px 9px 49px -17px rgba(156, 39, 148, 0.1); */
-
+    background-color: #E76F51;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
+
 .form-img{
-    flex-basis: 50%;
-    background: #f0f4f8;
-    background-size: cover;
+    background: #e5e5e5;
     padding: 40px;
     align-items: center;
-    display: grid;
-    
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
+
 .form-img img{
-    max-width: 100%;
+    width: 550px;
 }
+
 .btn,
 button,
 input{
+    position: relative;
     font-size: 1.1em;
     color: #ffffff;
 }
+
 .btn:hover,
 button:hover{
-    color: #E76F51;
-    border: 5px solid #E76F51;
+    color: #ffffff;
+    border: 5px solid #ffffff;
     transition: 0.5s ease;
     background-color: transparent;
 }
+
 .contact-form form{
-    margin: 30px 0;
+    position: relative;
 }
+
+.contact-form input {
+    font-size: 1.5em;
+}
+
 .contact-form input,
 textarea{
+    position: relative;
     outline: none;
     margin-bottom: 15px;
     font-stretch: 16px;
-    color: #999;
+    color: black;
     padding: 14px 20px;
     width: 100%;
     display: inline-block;
     box-sizing: border-box;
     border: none;
-    background: #fcfcfc;
+    background: #ffffff;
     transition: 0.3s ease;
-    background: transparent;
     border: 2px solid #264653;
 }
 
 .contact-form button{
+    position: relative;
     font-size: 1.8em;
     height: 70px;
-    color: #fff;
+    color: #ffffff;
     width: 100%;
-    background: #264653;
+    background: #31566d;
     font-weight: 600;
     transition: 0.2s ease;
     padding: 14px 15px;
-    border: 1px solid #264653;
+    border: 1px solid #31566d;
 
 }
 @media(max-width:736px){
@@ -263,4 +161,11 @@ textarea{
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
+}
+
+select {
+    position: relative;
+    background-color: #ffffff;
+    border: 2px solid #31566d;
+    border-right: none;
 }

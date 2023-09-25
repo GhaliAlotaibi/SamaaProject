@@ -37,6 +37,7 @@ html {
     width: 120px;
     height: 95px;
     margin: -5% 92.2% 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #IMG2 {
@@ -98,7 +99,63 @@ section p {
     color: white;
 }
 
-.products img {
+ /* The grid: Four equal columns that floats next to each other */
+ .column {
     position: relative;
-    margin: 0% 0% 0% 50%;
-}
+    padding: 10px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 26%;
+    right: 58%;
+  }
+
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    border: #EF8F43 solid 5px;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: absolute;
+    width: 560px;
+    left: 5%;
+    bottom: 30%;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  } 

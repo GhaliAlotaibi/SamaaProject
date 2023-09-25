@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>تسجيل الدخول</title>
-	<link rel="stylesheet" href="/CSS/signin.css">
+	<link rel="stylesheet" href="/CSS/signup.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
@@ -20,12 +20,15 @@
 
 
 		<div class="right">
-			<h5>تسجيل دخول</h5>
-			<p>ما عندك حساب؟ <a href="#">سو حساب جديد</a> ما راح ياخذ من وقتك شيء </p>
+			<h5>انشئ حسابك</h5>
 			<div class="inputs">
-				<input type="text" placeholder="اسم المستخدم ">
-				<br>
+				<input type="text" placeholder="الاسم الكامل">
+				<br><br>
+				<input type="email" placeholder="البريد الالكتروني الخاص بالعمل">
+				<br><br>
 				<input type="password" placeholder="كلمة المرور ">
+				<p>عندك حساب ؟ <a href="/HTML/login.html">سجلّ دخولك</a></p>
+
 			</div>
 
 			<br><br>
@@ -33,26 +36,22 @@
 			<div class="remember-me--forget-password">
 
 				<label>
-					<input type="checkbox">
 					<span class="text-checkbox" style="font-size: 1.7em;">تذكرني</span>
+					<input type="checkbox" class="text-checkbox">
 				</label>
-
-				<a href="#">
-					<p>نسيت الرمز؟</p>
-				</a>
 
 			</div>
 
 			<br>
 
 			<a href="/HTML/Home.html">
-				<button>سجل دخولك</button>
+				<button>انشئ حسابك</button>
 			</a>
 
 		</div>
 
 	</div>
-
+	<script src="/JS/sign.js"></script>
 </body>
 
 </html>

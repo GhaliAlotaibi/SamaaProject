@@ -90,7 +90,6 @@ section {
 }
 
 #webcam-container {
-    position: relative;
     height: 370px;
     width: 48%;
     border: 10px #31566d solid;
@@ -109,7 +108,6 @@ section {
 #label-container {
     font-size: 1.2em;
     margin: -10% 0% 0% 47%;
-    position: relative;
 }
 #start {
     position: relative;

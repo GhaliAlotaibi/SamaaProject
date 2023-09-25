@@ -7,14 +7,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
 body {
-  background-color: #b67744;
+  background-color: #153547;
   font-family: "Open Sans", sans-serif;
   color: white;
   text-align: right;
 }
 
 a {
-  color: #F4A261;
+  color: #8dcdff;
   text-decoration: none;
   font-weight: 900;
 }
@@ -28,22 +28,23 @@ a:hover {
   margin-top: 2%;
   width: 90%;
   height: 650px;
-  background: #264653;
+  background: #31566d;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 0 20px 6px #090b6f85;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .box-form .left {
-  background-color: #cfa94a;
+  background-color: #E76F51;
   background-size: 110%;
   background-repeat: no-repeat;
   background-image: url(/IMG/13041-removebg.png);
   background-position-x: center;
+  background-position-y: center;
   overflow: hidden;
-  width: 120%;
+  width: 700px;
 }
 
 .box-form .right {
@@ -66,10 +67,12 @@ a:hover {
 .box-form .right p {
   font-size: 1.2em;
   color: #c3c6cc;
+  margin-right: -3%;
 }
 
 .box-form .right .inputs {
-  right: 20%;
+  position: relative;
+  bottom: 50px;
 }
 
 .box-form .right input {
@@ -77,7 +80,7 @@ a:hover {
   width: 100%;
   padding: 10px;
   font-size: 20px;
-  border-bottom: 2px solid #B0B3B9;
+  border-bottom: 4px solid #7281a0;
 }
 
 .box-form .right .remember-me--forget-password {
@@ -92,23 +95,32 @@ a:hover {
 }
 
 .box-form .right button {
-  color: #fff;
+  color: #16425B;
   font-size: 1.7em;
   padding: 8px 30px;
   border-radius: 50px;
   display: inline-block;
-  border: 3px solid #F4A261;
+  border: 3px solid #397192;
   outline: 0;
-  background-color: #F4A261;
+  background-color: #D9DCD6;
   margin-right: 29%;
   transition: .3s;
+  position: relative;
+  bottom: 100px;
 }
 
 .box-form .right button:hover {
   background: transparent;
+  color: #D9DCD6;
+  border-color: #D9DCD6;
 }
 
 .box-form .right .remember-me--forget-password p {
   margin-bottom: 20%;
   font-size: 1.7em;
+}
+.text-checkbox {
+  position: relative;
+  bottom: 100px;
+  left: 430px;
 }
