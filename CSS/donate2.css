@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+    font-weight: normal;
+    font-family: 'Markazi Text', serif;
+    background: #E76F51;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.arrow {
+    position: absolute;
+    background-color: #e76f512e;
+    border-bottom-right-radius: 90%;
+    width: 90px;
+    height: 75px;
+    margin: -18% 94.1% 0% 0%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#IMG2 {
+    position: absolute;
+    width: 45px;
+    margin: -17.7% 96.3% 0% 0%;
+}
+
+section {
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    position: relative;
+}
+
+.card1 {
+    position: relative;
+    width: 1100px;
+    height: 550px;
+    background-color: #31566d;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.card2 {
+    position: relative;
+    width: 700px;
+    height: 550px;
+    background-color: #D9D9D9;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.card2 h2 {
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 2em;
+    text-align: right;
+    color: #31566d;
+}
+
+.card2 img {
+    width: 700px;
+    height: 253px;
+}

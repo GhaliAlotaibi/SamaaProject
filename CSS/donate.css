@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Markazi Text', serif;
+}
+
+/**  وهنا وضعنا خط الصفحة لجعله مريح للعين ولجمالية الموقع  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+/**  غيرنا لون الخلفية **/
+
+body {
+    font-weight: normal;
+    font-family: 'Markazi Text', serif;
+    background: #E76F51;
+}
+
+/** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/** اللوقو  **/
+
+#IMG1 {
+    position: relative;
+    margin-left: 8%;
+    margin-bottom: .5%;
+    width: 130px;
+}
+
+/**  رأٍس الصفحة **/
+
+header {
+    width: 100%;
+    background-color: rgba(5, 1, 0, 255);
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0%;
+    position: absolute;
+    background: #31566d;
+}
+
+/**  شريط صفحات الموقع **/
+
+.naV {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 50px;
+    align-items: center;
+    margin: 0% 0% 0% 7%;
+}
+
+.naV img {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.naV img:hover {}
+
+#signbtn {
+    font-weight: 900;
+    width: 200px;
+    height: 60px;
+    border: 3px solid #E76F51;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: #E76F51;
+    font-size: 2.3em;
+    color: #ffffff;
+    margin-left: 22%;
+}
+
+#signbtn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 5%;
+    height: 380px;
+}
+
+.CARD {
+    position: relative;
+    background-color: #ecdfbe;
+    width: 400px;
+    height: 380px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#card_title {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+}
+
+#card_img {
+    position: relative;
+    width: 380px;
+    height: 185px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    left: 10px;
+    border-bottom: #E76F51 solid 10px;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 2%;
+    margin-top: 3%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+#card_inp {
+    text-align: right;
+    height: 42px;
+    width: 194px;
+    border: rgba(0, 0, 0, 0.562) 2px solid;
+    border-radius: 40px;
+    padding-right: 8px;
+    font-size: 1.2em;
+}
+
+#card_btn1 {
+    border: #E76F51 3px solid;
+    background-color: #E76F51;
+    width: 200px;
+    height: 47px;
+    border-radius: 40px;
+    font-size: 1.8em;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #ffffff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#card_btn1:hover {
+    background: transparent;
+    color: black;
+}
+
+#card_btn2 {
+    border: #31566d 3px solid;
+    background-color: #31566d;
+    width: 70px;
+    height: 47px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#card_btn2 img {
+    transition: .5s;
+}
+
+#card_btn2 img:hover {
+    width: 32px;
+}
+
+#bigbtn {
+   width: 400px;
+   height: 70px;
+   font-size: 2.3em;
+   color: #ffffff;
+   background-color: #31566d;
+   border: none;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-top: #E76F51 solid 7px;
+   cursor: pointer;
+   transition: .5s;
+}
+
+#bigbtn:hover {
+    filter: brightness(70%);
+}
+
+footer {
+    background: #E76F51;
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    top: px;
+    height: 140px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+footer .row a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    font-size: 0.85em;
+}
+
+footer .row a:hover {
+    color: gray;
+}
+
+footer .row ul {
+    width: 100%;
+}
+
+footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+footer .row a i {
+    font-size: 4em;
+    margin: 0% 1%;
+}
+
+
+footer {
+    text-align: center;
+
+}
+
+footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+    font-size: 3em;
+}
+
+footer .row a i {
+    margin: 0% 3%;
+    font-size: 3em;
+}
+
+/**  ايقونات برامج التواصل الاجتماعي **/
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #31566d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+/* انيميشن الصفحات */
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
