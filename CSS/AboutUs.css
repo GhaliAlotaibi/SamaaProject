@@ -32,7 +32,6 @@ html {
 }
 
 /**  رأٍس الصفحة **/
-
 header {
     width: 100%;
     background-color: rgba(5, 1, 0, 255);
@@ -54,35 +53,49 @@ header {
     position: relative;
     gap: 50px;
     align-items: center;
-    margin: 0% 0% 0% 7%;
+    justify-content: center;
+    margin: 0% 0% 0% 0%;
+    left: 95px;
 }
 
 .naV img {
-    transition: all 0.3s;
-    cursor: pointer;
+    position: relative;
+    left: 5px;
 }
-
-.naV img:hover {
+.naV a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2.3em;
+}
+.naV a:hover {
+    text-decoration: none;
 }
 
 button {
     font-weight: 900;
-    width: 200px;
-    height: 60px;
-    border: 3px solid #E76F51;
-    border-radius: 25px;
+    width: 0px;
+    height: 0px;
+    /* border: 3px solid #E76F51; */
+    /* border-radius: 25px; */
     transition: all 0.3s;
     cursor: pointer;
-    background: #E76F51;
+    /* background: #E76F51; */
     font-size: 2.3em;
-    color: #ffffff;
-    margin-left: 22%;
+    /* color: #ffffff; */
+    border: 0px;
+    background-color: #31566d;
+    position: relative;
 }
 
 button:hover {
     background-color: transparent;
-    color: white;
+    /* color: white; */
 }
+i {
+    position: relative;
+    left: 50px;
+}
+
 
 /**  الخلفية الاولى مع النص والعنوان وزر تحريك الصفحة **/
 .image1 {

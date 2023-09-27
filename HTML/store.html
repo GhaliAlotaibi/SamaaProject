@@ -9,30 +9,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
     <title>المتجر</title>
+    <script src="https://kit.fontawesome.com/f775d5945e.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <!-- هذه ازرار تسجيل الدخول وانشاء الحساب مربوطة يصفحات متخصصة بتسجيل الدخول -->
 
     <header>
-        <div class="button">
-            <a href="/HTML/signin.html">
-                <button style="font-size: 1.4em;">تسجيل دخول</button>
-            </a>
-
-            <a href="#">
-                <button id="button" style="font-size: 1.6em;">انشاء حساب</button>
+        <div id="button">
+            <a href="/HTML/login.html" id="button0">
+                <button id="button0"><i class="fa-solid fa-user" style="color: #e76f51;" id="button0"></i></button>
             </a>
         </div>
 
         <!-- وهذه شريط الصفحات كل زر مرتبط بالصفحة المسماه على زرها -->
 
         <nav>
-            <a href="#">حسابك</a>
-            <a href="#">متجرنا</a>
-            <a href="#">خدماتنا</a>
-            <a href="#">ترجـــم</a>
-            <a href="/HTML/Home.html">الصفحة الرئيسية</a>
+            <div class="naV">
+                <a href="/HTML/ContactUs.html">تواصل معنا<img src="/IMG/operator.png" width="25px"></a>
+                <a href="/HTML/AboutUs.html">عن شركتنا<img src="/IMG/group.png" width="25px"></a>
+                <a href="/HTML/donate.html">تبرّع<img src="/IMG/donate.png" width="25px"></a>
+                <a href="/HTML/store.html">المتجر<img src="/IMG/merchant.png" width="25px"></a>
+                <a href="/projectG/using_camera.html">ترجم<img src="/IMG/p.png" width="25px"></a>
+                <a href="/HTML/Home.html">الصفحة الرئيسية<img src="/IMG/house.png" width="25"></a>
+            </div>
+
         </nav>
 
         <!-- وهذه صورة موقعنا (اللوقو) -->
@@ -229,7 +231,7 @@
 
     </footer>
 
-
+    <script src="/JS/Store.js"></script>
 </body>
 
 </html>
