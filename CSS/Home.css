@@ -8,12 +8,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 6px;
+    /* background: #E76F51; */
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+  }
+  
 /**  غيرنا لون الخلفية **/
 
 body {
     font-weight: normal;
     font-family: 'Markazi Text', serif;
     background: #E76F51;
+    /* overflow: hidden; */
+    scrollbar-width: thin;
 }
 
 /** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
