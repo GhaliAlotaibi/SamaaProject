@@ -106,7 +106,7 @@ a:hover {
   margin-right: 29%;
   transition: .3s;
   position: relative;
-  bottom: 100px;
+  bottom: 50px;
 }
 
 .box-form .right button:hover {
@@ -121,6 +121,6 @@ a:hover {
 }
 .text-checkbox {
   position: relative;
-  bottom: 100px;
-  left: 430px;
+  bottom: 170px;
+  left: 580px;
 }

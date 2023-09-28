@@ -14,6 +14,7 @@ body {
   font-weight: normal;
   font-family: 'Markazi Text', serif;
   background: #E76F51;
+  
 }
 
 /** غيرنا شكل التصفح وصار سلس اكثر وافضل  **/
@@ -54,35 +55,51 @@ header {
   position: relative;
   gap: 50px;
   align-items: center;
-  margin: 0% 0% 0% 7%;
+  justify-content: center;
+  margin: 0% 0% 0% 0%;
+  left: 95px;
 }
 
 .naV img {
-  transition: all 0.3s;
-  cursor: pointer;
+  position: relative;
+  left: 5px;
 }
-
-.naV img:hover {
-}
-
-#signbtn {
-  font-weight: 900;
-  width: 200px;
-  height: 60px;
-  border: 3px solid #E76F51;
-  border-radius: 25px;
-  transition: all 0.3s;
-  cursor: pointer;
-  background: #E76F51;
-  font-size: 2.3em;
+.naV a {
+  text-decoration: none;
   color: #ffffff;
-  margin-left: 22%;
+  font-size: 2.3em;
+}
+.naV a:hover {
+  text-decoration: none;
+}
+
+/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+
+button {
+  font-weight: 900;
+  width: 0px;
+  height: 0px;
+  /* border: 3px solid #E76F51; */
+  /* border-radius: 25px; */
+  transition: all 0.3s;
+  cursor: pointer;
+  /* background: #E76F51; */
+  font-size: 2.3em;
+  /* color: #ffffff; */
+  border: 0px;
+  background-color: #31566d;
+  position: relative;
 }
 
 #signbtn:hover {
   background-color: transparent;
-  color: white;
+  /* color: white; */
 }
+i {
+  position: relative;
+  left: 50px;
+}
+
 
 h1 {
   text-align: center;
@@ -167,7 +184,7 @@ section {
 }
 
 .card-footer {
-  margin-top: %;
+  /* margin-top: ; */
   width: 100%;
   height: 15%;
 }

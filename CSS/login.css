@@ -112,7 +112,8 @@
     width: 30%;
     text-align: center;
     position: relative;
-    top: 100px;
+    top: 120px;
+    cursor: pointer;
   }
   
   .box-form .right #sub:hover {
@@ -127,6 +128,6 @@
   }
   .text-checkbox {
     position: relative;
-    bottom: 100px;
-    left: 430px;
+    bottom: 110px;
+    left: 580px;
   }

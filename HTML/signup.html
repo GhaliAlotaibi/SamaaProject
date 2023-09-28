@@ -21,15 +21,17 @@
 
 		<div class="right">
 			<h5>انشئ حسابك</h5>
-			<div class="inputs">
-				<input type="text" placeholder="الاسم الكامل">
+			<form id="inputs">
+				<input type="text" placeholder="الاسم الكامل" id="username" >
 				<br><br>
-				<input type="email" placeholder="البريد الالكتروني الخاص بالعمل">
+				<input type="email" placeholder="البريد الالكتروني الخاص بالعمل" id="email">
 				<br><br>
-				<input type="password" placeholder="كلمة المرور ">
+				<input type="password" placeholder="كلمة المرور " id="password">
 				<p>عندك حساب ؟ <a href="/HTML/login.html">سجلّ دخولك</a></p>
+				<br><br><br>
+				<button id="inputs">انشئ حسابك</button>
 
-			</div>
+			</form>
 
 			<br><br>
 
@@ -44,14 +46,12 @@
 
 			<br>
 
-			<a href="/HTML/Home.html">
-				<button>انشئ حسابك</button>
-			</a>
-
 		</div>
 
 	</div>
-	<script src="/JS/sign.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="/JS/signup.js"></script>
 </body>
 
 </html>
