@@ -9,7 +9,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
 /**  غيرنا لون الخلفية **/
+::-webkit-scrollbar {
+  width: 0px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  /* background: #E76F51; */
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
 body {
   font-weight: normal;
   font-family: 'Markazi Text', serif;
@@ -72,8 +86,10 @@ header {
 .naV a:hover {
   text-decoration: none;
 }
-
-/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+.button {
+  position: relative;
+  right: 40px;
+}
 
 button {
   font-weight: 900;
@@ -91,7 +107,7 @@ button {
   position: relative;
 }
 
-#signbtn:hover {
+button:hover {
   background-color: transparent;
   /* color: white; */
 }
@@ -99,7 +115,6 @@ i {
   position: relative;
   left: 50px;
 }
-
 
 h1 {
   text-align: center;
@@ -350,4 +365,103 @@ footer .row a i {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.dropdown {
+  left: 50px;
+}
+.dropbtn {
+  width: 140px;
+  background: transparent;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  /* right: 80px */
+}
+.dropdown-content {
+  color: white;
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #e3f0ff;
+  min-width: 80px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 75px;
+  top: 63px;
+  
+}
+
+.dropdown-content a {
+  color: #143357;
+  padding: 12px 16px;
+  font-size: 1.4em;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-content a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #143357;
+  transform-origin: bottom right;
+  transition: transform 0.20s ease-out;
+
+}
+
+.dropdown-content a:hover::after {
+  /* text-decoration-color: #FFD100; */
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+.dropdown-content button {
+  color: #143357;
+  padding: 12px 16px;
+  /* display:block; */
+  font-size: 1.1em;
+  position: relative;
+  text-align: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  top: -10px;
+}
+.dropdown-content button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -18px;
+  left: 0px;
+  right: 0px;
+  background-color: #143357;
+  transform-origin: bottom right;
+  transition: transform 0.20s ease-out;
+
+}
+
+.dropdown-content button:hover::after {
+  /* text-decoration-color: #FFD100; */
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  /* text-decoration-color: #FFD100; */
+}
+
+.dropdown:hover .dropbtn {
+  background-color:transparent;
+  color: transparent;
 }

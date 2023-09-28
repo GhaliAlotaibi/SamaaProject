@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
     <title>حسابي</title>
     <script src="https://kit.fontawesome.com/f775d5945e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
         <!-- هذه ازرار تسجيل الدخول وانشاء الحساب مربوطة يصفحات متخصصة بتسجيل الدخول -->
@@ -48,13 +50,13 @@
                 <div id="son2">
                     <div id="name">
                         <h1>الاسم</h1>
-                        <h3>عبدالله عبدالعزيز الرميح</h3>
-                        <button>تحديث</button>
+                        <h3 id="name1"></h3>
+                        <button onclick="editData()">تحديث</button>
                     </div>
                     <hr>
                     <div id="mail">
                         <h1>البريد الالكتروني</h1>
-                        <h3>a.az119@hotmail.com</h3>
+                        <h3 id="mail1"></h3>
                         <button>تحديث</button>
                     </div>
                     <hr>
