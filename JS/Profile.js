@@ -31,22 +31,23 @@ if (username) {
     })
 }
 /////////////////////////////////////////////////////////////////////////
-function editData(id, username) {
-    let newuser = prompt('ادخل اسم المستخدم الجديد :', username)
+// function editData(id, username) {
+//     let newuser = prompt('ادخل اسم المستخدم الجديد :', username)
 
-    if (newuser) {
-        axios
-          .put(`https://64fdcced596493f7af7e9ac2.mockapi.io/api/v1/users/${id}`, {
-            username: newuser || image,
-          })
-          .then((response) => {
-            console.log("تم التحديث بنجاح", response.data);
-          })
-          .catch((error) => {
-            console.error("error", error);
-          });
-      }
-    }
+//     if (newuser) {
+//         axios
+//           .put(`https://64fdcced596493f7af7e9ac2.mockapi.io/api/v1/users/${id}`, {
+//             username: newuser || username,
+//           })
+//           .then((response) => {
+//             console.log("تم التحديث بنجاح", response.data);
+//             localStorage.setItem('username')
+//           })
+//           .catch((error) => {
+//             console.error("error", error);
+//           });
+//       }
+//     }
 
 /////////////////////////////////////////
 let uu = localStorage.getItem('username')

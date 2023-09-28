@@ -9,7 +9,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
 /**  غيرنا لون الخلفية **/
+::-webkit-scrollbar {
+  width: 0px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  /* background: #E76F51; */
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
 body {
   font-weight: normal;
   font-family: 'Markazi Text', serif;
@@ -72,8 +86,10 @@ header {
 .naV a:hover {
   text-decoration: none;
 }
-
-/**  ازرار تسجيل الخروج والدخول وانشاء الحساب **/
+.button {
+  position: relative;
+  right: 40px;
+}
 
 button {
   font-weight: 900;
@@ -91,7 +107,7 @@ button {
   position: relative;
 }
 
-#signbtn:hover {
+button:hover {
   background-color: transparent;
   /* color: white; */
 }
@@ -99,7 +115,6 @@ i {
   position: relative;
   left: 50px;
 }
-
 
 h1 {
   text-align: center;
