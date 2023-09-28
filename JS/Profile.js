@@ -2,6 +2,8 @@ let div1 = document.getElementById('button0')
 let username = localStorage.getItem('username')
 let maindiv = document.getElementById('button')
 let i = document.createElement('i')
+let name1 = document.getElementById('name1')
+let mail = document.getElementById('mail1')
 if (username) {
     div1.remove()
     let dropdown = document.createElement('div')
@@ -28,3 +30,26 @@ if (username) {
         window.location.href = '/HTML/Home.html'
     })
 }
+/////////////////////////////////////////////////////////////////////////
+function editData(id, username) {
+    let newuser = prompt('ادخل اسم المستخدم الجديد :', username)
+
+    if (newuser) {
+        axios
+          .put(`https://64fdcced596493f7af7e9ac2.mockapi.io/api/v1/users/${id}`, {
+            username: newuser || image,
+          })
+          .then((response) => {
+            console.log("تم التحديث بنجاح", response.data);
+          })
+          .catch((error) => {
+            console.error("error", error);
+          });
+      }
+    }
+
+/////////////////////////////////////////
+let uu = localStorage.getItem('username')
+let ee = localStorage.getItem('email')
+name1.textContent = uu
+mail.textContent = ee

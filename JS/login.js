@@ -2,16 +2,19 @@ document.getElementById('Login').addEventListener("submit", function (event) {
     event.preventDefault();
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
+    let email = ''
     axios.get('https://64fdcced596493f7af7e9ac2.mockapi.io/api/v1/users').then(function (response) {
         api = response.data;
         for (let i = 0; i <= api.length; i++) {
             if (
                 response.data[i].username === username &&
                 response.data[i].password === password
-              )
-              
+                )
               {
+                email = response.data[i].email;
+
                 localStorage.setItem("username", username)
+                localStorage.setItem('email', email)
                 setTimeout(function() {
                     window.location.href = "/HTML/Home.html"
                 }, 4000);
