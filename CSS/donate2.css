@@ -24,7 +24,8 @@ html {
 
 .arrow {
     position: absolute;
-    background-color: #e76f512e;
+    background-color: #d6553530;
+    color: #223b4b00;
     border-bottom-right-radius: 90%;
     width: 90px;
     height: 75px;

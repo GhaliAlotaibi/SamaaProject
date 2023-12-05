@@ -141,8 +141,7 @@ section {
     /* margin-left: ; */
     position: relative;
 }
-#webcam-container canvas {
-}
+
 #label-container1 {
     position: absolute;
     font-size: 5em;

@@ -179,7 +179,7 @@ section {
 #card_btn2 {
     border: #31566d 3px solid;
     background-color: #31566d;
-    width: 70px;
+    width: 80px;
     height: 47px;
     border-radius: 50%;
     transition: .3s;
@@ -191,7 +191,7 @@ section {
 }
 
 #card_btn2 img:hover {
-    width: 32px;
+    width: 30px;
 }
 
 #bigbtn {
